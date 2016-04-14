@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+</head>
+<script>
+function simpleGenerator(){
+yield "first";
+yield "second";
+yield "third";
+for (var i = 0; i < 3; i++)
+  yield i;
+}
+var g = simpleGenerator();
+console.log(g)
+</script>
+<body>
+</body>
+</html>
